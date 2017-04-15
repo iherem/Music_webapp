@@ -1,0 +1,250 @@
+@import url(https://fonts.googleapis.com/css?family=Kanit&subset=thai,latin);
+html {
+    position: relative;
+    min-height: 100%;
+
+}
+body{
+    font-family: 'Kanit', sans-serif;
+    background-color: black;
+}
+.navbar-default {
+    border-bottom: solid rgba(29, 29, 29, 0.67) 2px;
+}
+.panel-anny{
+    font-size: 13px;
+    background-color: #2B2B2B;
+    padding:5px;
+}
+.panel-anny h3{
+    margin-top: 0;
+}
+.panel-anny-title{
+    font-weight: 700;
+    font-size: 1.15385em;
+    color: #fff;
+    border-bottom: 2px solid #494949;
+}
+.panel-anny-title span{
+    float: right;
+}
+.panel-anny-title span a{
+    color:rgba(255, 255, 255, 0.70);
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: none;
+    transition: 1s;
+}
+.panel-anny-title span a:hover{
+    color:rgba(255, 255, 255, 1);
+    transition: 1s;
+}
+.panel-anny-list li.item a.songname{
+    color: #fff;
+}
+.panel-anny-list li.item a.songname:hover{
+
+}
+.panel-anny-list li.item a.songartist{
+    color: #B0B0B0;
+}
+.panel-anny-list li.item{
+    border-bottom: solid #616161 1px;
+    margin-bottom: 8px;
+}
+.panel-anny-list li.item .label-default{
+    background-color: #797979;
+}
+.panel-anny-list li.itemlast{
+    border-bottom: solid #616161 0px;
+    margin-bottom: 0px;
+}
+ul {
+    padding: 0;
+    list-style-type: none;
+    margin-bottom: 0px;
+}
+.panel-anny-list .item .info{
+    display: inline-table;
+    margin-bottom: 3px;
+}
+.songs{
+    color:#fff;
+
+}
+.songs p,a{
+    color:#fff;
+}
+.songs p{
+    margin-bottom: 0px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+.songs p.songname >a{
+    color: #fff;
+}
+.songs p.songartist>a{
+    font-weight: normal;
+    font-size: 13px;
+    color: #B0B0B0;
+}
+.songs a:hover{
+    color:#fff;
+}
+.songs h3{
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    border-bottom: 1px solid #979797;
+    padding-bottom: 5px;
+}
+.songs h3 span{
+    float: right;
+}
+.songs h3 span a{
+    color:rgba(255, 255, 255, 0.70);
+    font-size: 13px;
+    font-weight: normal;
+    text-decoration: none;
+    transition: 1s;
+}
+.songs h3 span a:hover{
+    color:rgba(255, 255, 255, 1);
+    transition: 1s;
+}
+.songs img{
+    width: 100%;
+}
+.footer{
+    color: #fff;
+    padding-top: 3px;
+    background-color: rgba(34, 34, 34, 0.73);
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.songs .post_img{
+    position:relative;
+}
+.songs .post_img:hover .play{
+    display:block;
+}
+.songs .post_img:hover .playbg{
+    display:block;
+    transition: 2s;
+}
+.songs .post_img .play{
+    position: absolute;
+    display: none;
+    top: 35%;
+    margin: 0 auto;
+    left: 0px;
+    right: 0px;
+    z-index: 100;
+    text-align: center;
+}
+.songs .post_img .playbg{
+    position: absolute;
+    display: none;
+    top: 0;
+    margin: 0 auto;
+    left: 0px;
+    right: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: 5s;
+}
+.songs .box{
+    margin-bottom: 10px;
+}
+.menutopsong{
+    background-color: rgb(34, 34, 34);
+    border-bottom: solid rgba(60, 58, 58, 0.84) 2px;
+    color: #fff;
+    text-align: center;
+    padding: 8px 5px;
+}
+.menutopsong a{
+    color: rgba(255, 255, 255, 0.71);
+    font-size: 12px;
+    text-decoration: none;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+.menutopsong a.active{
+    color: #fff;
+    text-decoration: underline;
+}
+.menutopsong a:hover{
+    color: rgba(255, 255, 255, 1);
+    font-size: 15px;
+}
+.post-allsong{
+    background-color: rgba(0, 0, 0, 0.45);
+    color:#fff;
+}
+.table-borderless tbody tr td, .table-borderless tbody tr th, .table-borderless thead tr th {
+    border: none;
+    text-align: center;
+}
+tr.listsong{
+    cursor: pointer;
+}
+tr:hover{
+    background-color: rgba(0, 0, 0, 0.49);
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+#myMusic{
+    margin:15px auto;
+    width:100%;
+}
+.playmusic{
+    background-color: rgba(34, 34, 34, 0.46);
+    border-bottom: solid rgba(60, 58, 58, 0.84) 2px;
+    color: #fff;
+    text-align: center;
+    padding: 20px 5px;
+}
+.playmusic img{
+    margin:0 auto;
+}
+.playmusic .playmysic_songname{
+    font-size: 25px;
+}
+li.item:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.searchbox{
+    background-color: rgba(0, 0, 0, 0.37);
+    color:#fff;
+    padding: 10px 20px;
+}
+.song > #psongname{
+    display: inline;
+}
+.song > #psongartist{
+    display: inline;
+    color: rgba(221, 221, 221, 0.69);
+}
+#myMusic > a{
+    float: none;
+}
+#myMusic > a:hover{
+    color:#fff;
+}
+.footer > .song > img{
+    display: none;
+}
